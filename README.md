@@ -10,9 +10,8 @@
 
 ## build
 
-`$ protoc -I=./hellopb --go_out=./hellopb --go-grpc_out=./hellopb hellopb/hello.proto`
+`$ protoc --go_out=./hellopb --go-grpc_out=./hellopb hellopb/hello.proto`
 
-* `-I`: 出力先
 * `--go_out`: protobufのmessageとかenumとかが吐かれる先
 * `--go-grpc_out`: protobufのserviceから作られるserverとかclientが吐かれる先
 * 最後にprotoファイルのパス
